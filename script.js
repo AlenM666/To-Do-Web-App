@@ -10,7 +10,7 @@ addTask.addEventListener('click', function(){
 
     if(taskText !== ''){
         const listItem = document.createElement('li');
-        
+
         listItem.innerHTML = `
         <span>${taskText}</span>
         <button class="delete">Delete</button>
@@ -28,10 +28,11 @@ addTask.addEventListener('click', function(){
     }else if(taskText == '') {
         error.textContent = "Enter a task!";
         setTimeout(() => {
-            error.textContent = ''; 
+            error.textContent = '';
         }, 2500);
     }
 })
+
 
 
 
